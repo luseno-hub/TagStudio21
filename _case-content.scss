@@ -1,0 +1,120 @@
+.case-content {
+  background-color: color(tag-red);
+  padding-top: 100px;
+
+  &__bloc {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 810px) {
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: 998px) {
+      padding-bottom: 3.125rem;
+    }
+  }
+
+  &__image {
+    padding: 1.25em;
+
+    &--imgWrapper {
+      width: 16em;
+      height: 25em;
+      background-image: url("./assets/img/Kenya-Railways.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.5);
+      box-shadow: 5px 5px 20px -1 rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__content-info {
+    padding: 1.25rem;
+    color: color(white-clr);
+
+    h2 {
+      margin-bottom: 1.25rem;
+    }
+    h6 {
+      font-weight: 300;
+
+      @media screen and (min-width: 768px) and (max-width: 2860px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__body {
+    margin: 1.25rem 0;
+    padding: 1.25rem 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+    p > strong {
+      display: block;
+      margin: 1.25rem 0;
+    }
+
+    p {
+      @media screen and (min-width: 1400px) and (max-width: 2860px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__cases-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .next {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: end;
+
+      .img {
+        margin-left: 0.625rem;
+      }
+
+      .text {
+        p:nth-child(1) {
+          font-size: 0.625rem;
+        }
+
+        p:nth-child(2) {
+          font-size: 0.7rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .prev {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: start;
+
+      .img {
+        margin-right: 0.625rem;
+      }
+
+      .text {
+        p:nth-child(1) {
+          font-size: 0.625rem;
+        }
+
+        p:nth-child(2) {
+          font-size: 0.7rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

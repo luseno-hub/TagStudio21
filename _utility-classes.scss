@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Proxima Nova Bl";
+  src: url("./assets/fonts/ProximaNova-Black.woff2") format("woff2"),
+    url("./assets/fonts/ProximaNova-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro Lt Ob";
+  src: url("./assets/fonts/AvenirLTPro-LightOblique.woff2") format("woff2"),
+    url("./assets/fonts/AvenirLTPro-LightOblique.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro Bl";
+  src: url("./assets/fonts/AvenirLTPro-Black.woff2") format("woff2"),
+    url("./assets/fonts/AvenirLTPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Bl It";
+  src: url("./assets/fonts/ProximaNova-BlackIt.woff2") format("woff2"),
+    url("./assets/fonts/ProximaNova-BlackIt.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro Lt";
+  src: url("./assets/fonts/AvenirLTPro-Light.woff2") format("woff2"),
+    url("./assets/fonts/AvenirLTPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir LT Pro Ob";
+  src: url("./assets/fonts/AvenirLTPro-Oblique.woff2") format("woff2"),
+    url("./assets/fonts/AvenirLTPro-Oblique.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-wrapper {
+  width: 100%;
+  max-width: 75em;
+  padding: 1.25rem;
+
+  @media screen and (min-width: 998px) {
+    padding: 0 5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.titlecase {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-family: fonts(h1);
+  font-size: mobileSize(H1);
+  font-weight: 900;
+  letter-spacing: 3px;
+
+  @media screen and (min-width: 800px) {
+    font-size: tabRes(H1);
+  }
+
+  @media screen and (min-width: 1400px) {
+    font-size: dtSize(H1);
+  }
+}
+
+h2 {
+  font-family: fonts(h2);
+  font-size: mobileSize(H2);
+  font-weight: 700;
+
+  @media screen and (min-width: 998px) {
+    font-size: tabRes(H2);
+    font-weight: 700;
+  }
+}
+
+h3 {
+  font-family: fonts(h3);
+  font-size: mobileSize(H3);
+  font-weight: 700;
+
+  @media screen and (min-width: 998px) {
+    font-size: tabRes(H3);
+    font-weight: 700;
+  }
+}
+
+h4 {
+  font-family: fonts(h4);
+  font-size: mobileSize(H4);
+  font-weight: 900;
+
+  @media screen and (min-width: 998px) {
+    font-size: tabRes(H4);
+    font-weight: 900;
+  }
+}
+
+h5 {
+  font-family: fonts(h5);
+  font-size: mobileSize(H5);
+  font-weight: 300;
+
+  @media screen and (min-width: 998px) {
+    font-size: tabRes(H5);
+    font-weight: 300;
+  }
+}
+
+h6 {
+  font-family: fonts(h6);
+  font-size: mobileSize(H6);
+  font-weight: 300;
+
+  @media screen and (min-width: 998px) {
+    font-size: tabRes(H6);
+    font-weight: 300;
+  }
+}
+
+p {
+  font-family: fonts(p);
+  font-size: mobileSize(P3);
+  font-weight: 400;
+  line-height: 2;
+
+  @media screen and (min-width: 998px) {
+    font-size: tabRes(P3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: mobileSize(P2);
+  }
+
+  @media screen and (min-width: 1400px) {
+    font-size: dtSize(P3);
+  }
+}
+
+strong {
+  font-weight: 700;
+}

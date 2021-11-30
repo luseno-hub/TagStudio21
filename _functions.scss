@@ -1,0 +1,19 @@
+@function color($color-name) {
+  @return map-get($color, $color-name);
+}
+
+@function fonts($tag-name) {
+  @return map-get($fonts, $tag-name);
+}
+
+@function mobileSize($tag) {
+  @return map-get($mobileSize, $tag);
+}
+
+@function dtSize($tag) {
+  @return map-get($dtSize, $tag);
+}
+
+@function tabRes($tagSz) {
+  @return map-get($tabRes, $tagSz);
+}

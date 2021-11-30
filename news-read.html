@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Read</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./assets/img/TAG-Logo-favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a name="to-top"></a>
+  <!-- navigation -->
+  <header class="header-nav" id="top">
+    <div class="container-wrapper header-nav__header">
+
+      <div class="header-nav__logo">
+        <img src="./assets/img/TAG-Logo.png" alt="Tag Brand Studio logo">
+      </div>
+
+        <!-- Nav Toggle - Must come before Nav element -->
+        <input
+          aria-hidden="true"
+          type="checkbox"
+          name="toggle"
+          id="nav-toggle"
+          class="nav-toggle"
+        />
+        <nav>
+          <ul>
+            <li><a href="./index.html#hero-section" class="home-section">Home</a></li>
+            <li><a href="./index.html#about-section" class="about-section">About</a></li>
+            <li><a href="./index.html#news-section" class="news-section">News</a></li>
+            <li><a href="./index.html#wwd-section" class="testimonials-section">Testimonials</a></li>
+            <li><a href="./index.html#newsletter-section" class="newsletter-section">Newsletter</a></li>
+            <li><a href="./index.html#contacts-section" class="contacts-section">Contact Us</a></li>
+          </ul>
+        </nav>
+        <!-- Trigger for the Nav Toggle Input el -->
+        <label for="nav-toggle" class="nav-toggle-label">
+          <div class="menuBars">
+            <div class="bar-one bars"></div>
+            <div class="bar-two bars"></div>
+            <div class="bar-three bars"></div>
+            <!-- <span></span> -->
+          </div>
+        </label>
+
+        <div class="header-nav__search">
+          <input type="search" name="search-box" id="searchBox">
+          <label for="searchBox" class="search-bar">
+            <span class="material-icons-outlined">
+              search
+            </span>
+          </label>
+          <!-- <span class="material-icons-outlined">
+            search
+          </span> -->
+        </div>
+    </div>
+  </header>
+  <!-- navigation end-->
+  
+  <div class="article-content">
+    <div class="container-wrapper">
+      <div class="article-content__heading-bar">
+        <h1>Synopsis</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit.</p>
+      </div>
+      <div class="article-content__content-image"></div>
+      <div class="article-content__title-bar">
+        <h2>Digital Summit</h2>
+        <p>Daniel Muchai</p>
+      </div>
+      <div class="article-content__body-content">
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+    
+        <p><strong>
+          Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+        </strong></p>
+    
+        <p>
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        </p>
+      </div>
+      <div class="article-content__cases-nav">
+    
+        <div class="prev">
+          <div class="img">
+            <img src="../assets/icons/back-icon.svg" alt="previous icon" aria-hidden="true">
+          </div>
+          <div class="text">
+            <p>Prev Story</p>
+            <p>01 The Walls Within</p>
+          </div>
+        </div>
+        <div class="next">
+          <div class="img">
+            <img src="../assets/icons/next-icon.svg" alt="previous icon" aria-hidden="true">
+          </div>
+          <div class="text">
+            <p>Next Story</p>
+            <p>01 The Walls Within</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-content__all-stories">
+        <p>View All News Stories</p>
+        <span class="material-icons-outlined">
+          east
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Us section -->
+  <footer class="contacts" id="contacts-section">
+    <div class="container-wrapper contacts__footer">
+      <div class="contacts__col-form">
+        <h3>
+          Get in touch with us
+        </h3>
+        <form action="/contact_us.php" method="post" class="contacts__form">
+          <label for="first-name"></label>
+          <input id="first-name" type="text" placeholder="First Name">
+
+          <label for="last-name"></label>
+          <input id="last-name" type="text" placeholder="Last Name">
+
+          <label for="phone_number"></label>
+          <input id="phone_number" type="number" placeholder="Phone Number">
+
+          <label for="email"></label>
+          <input id="email" type="email" placeholder="Email Address">
+
+          <button type="submit" class="contacts__submit">Submit</button>
+        </form>
+      </div>
+      <div class="contacts__col-info">
+        <h3>
+          Call or Email us on:
+        </h3>
+
+        <div class="contacts__phone">
+          <span class="material-icons">
+            call
+          </span>
+          <p>0719 038 012</p>
+        </div>
+
+        <div class="contacts__email">
+          <span class="material-icons">
+            email
+          </span>
+          <p><em>snkamau@ke.nationmedia.com</em></p>
+        </div>
+
+        <p>Better still...</p>
+
+        <p>Walk into Nation Center First Floor TAG Studio Offices</p>
+        <p>Let's start the Digital Transformation journey...</p>
+      </div>
+    </div>
+    <div class="contacts__footer-tag">
+      <p>© TAG COPYRIGHT 2021.</p>
+    </div>
+
+    <a href="#to-top">
+      <div class="contacts__back-to-top">
+        <span class="material-icons">
+          expand_less
+        </span>
+      </div>
+    </a>
+  </footer>
+  <!-- Contact Us section End -->
+</body>
+</html>

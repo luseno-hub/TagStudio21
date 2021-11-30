@@ -1,0 +1,68 @@
+$xl: 87.5em; // 4k and hi-res desktop
+$lg: 60em; // 1080 and hi-res laptops
+$med: 40em; // hi-res tablets and low-res laptops
+$sm: 28em; // mobile and low-res tablets
+$xs: 20em; // mobile only
+
+$color: (
+  tag-red: #ed145b,
+  tag-teal: #00acbd,
+  tag-mustard: #fcb53b,
+  text-on-mustard: #282828,
+  text-on-light: #333233,
+  bg-blend: #535353,
+  //also Bg
+  tag-purp: #3b248b,
+  white-clr: #fff,
+  light-BG: #f4f5f6,
+  blackBG: #000,
+);
+
+$fonts: (
+  h1: "Proxima Nova Bl",
+  h2: "Proxima Nova Bl",
+  h3: "Proxima Nova Bl",
+  h4: "Proxima Nova Bl",
+  h5: "Avenir LT Pro Lt",
+  h6: "Proxima Nova Bl",
+  p: "Avenir LT Pro Lt",
+);
+
+$mobileSize: (
+  H1: 2.5rem,
+  H2: 1.8rem,
+  H3: 1.6rem,
+  H4: 1.1rem,
+  H5: 0.875rem,
+  H6: 0.875rem,
+  P1: 1rem,
+  P2: 0.9rem,
+  P3: 0.875rem,
+  P4: 0.7rem,
+);
+
+$tabRes: (
+  H1: 6rem,
+  H2: 4rem,
+  H3: 2.4rem,
+  H4: 1.1rem,
+  H5: 2rem,
+  H6: 2.4rem,
+  P1: 1.1rem,
+  P2: 0.9rem,
+  P3: 0.875rem,
+  P4: 0.75rem,
+);
+
+$dtSize: (
+  H1: 7rem,
+  H2: 5.8rem,
+  H3: 4.33rem,
+  H4: 1.75rem,
+  H5: 1.916rem,
+  H6: 1.5rem,
+  P1: 1rem,
+  P2: 1rem,
+  P3: 1rem,
+  P4: 1rem,
+);

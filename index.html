@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAG Brand Studio</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./assets/img/TAG-Logo-favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a name="to-top"></a>
+  <!-- navigation -->
+  <header class="header-nav" id="top">
+    <div class="container-wrapper header-nav__header">
+
+      <div class="header-nav__logo">
+        <img src="./assets/img/TAG-Logo.png" alt="Tag Brand Studio logo">
+      </div>
+
+        <!-- Nav Toggle - Must come before Nav element -->
+        <input
+          aria-hidden="true"
+          type="checkbox"
+          name="toggle"
+          id="nav-toggle"
+          class="nav-toggle"
+        />
+        <nav>
+          <ul>
+            <li><a href="#hero-section" class="home-section">Home</a></li>
+            <li><a href="#about-section" class="about-section">About</a></li>
+            <li><a href="#news-section" class="news-section">News</a></li>
+            <li><a href="#wwd-section" class="testimonials-section">Testimonials</a></li>
+            <li><a href="#newsletter-section" class="newsletter-section">Newsletter</a></li>
+            <li><a href="#contacts-section" class="contacts-section">Contact Us</a></li>
+          </ul>
+        </nav>
+        <!-- Trigger for the Nav Toggle Input el -->
+        <label for="nav-toggle" class="nav-toggle-label">
+          <div class="menuBars">
+            <div class="bar-one bars"></div>
+            <div class="bar-two bars"></div>
+            <div class="bar-three bars"></div>
+            <!-- <span></span> -->
+          </div>
+        </label>
+
+        <div class="header-nav__search">
+          <input type="search" name="search-box" id="searchBox">
+          <label for="searchBox" class="search-bar">
+            <span class="material-icons-outlined">
+              search
+            </span>
+          </label>
+          <!-- <span class="material-icons-outlined">
+            search
+          </span> -->
+        </div>
+    </div>
+  </header>
+  <!-- navigation end-->
+
+  <!-- Hero section -->
+  <section class="hero" id="hero-section">
+    <div class="home-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="slide-one home-slider__slides swiper-slide container-wrapper">
+
+          <div class="home-slider__content">
+            <h1 class="caps home-slider__h1">
+              <span class="home-slider__content--red">elevating</span><br>
+              <span class="home-slider__content--teal">your</span> 
+              <span class="home-slider__content--mustard">brand</span>
+            </h1>
+            <p class="home-slider__body">
+              We build & implement sustainable digital marketing models that put people and product at the center of every conversation
+            </p>
+          </div>
+          <div class="home-slider__cta">
+            <p>Explore</p>
+            <div class="mouseWheel">
+              <div class="mouseScroll"></div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-two hero-slides swiper-slide"></div>
+        <div class="slide-three hero-slides swiper-slide"></div>
+      </div>
+
+      <!-- Slider navigation buttons -->
+      <span id="swipers-button-prev" class="material-icons-outlined swiper-button-prev">
+        west
+      </span>
+      <span id="swipers-button-next" class="material-icons-outlined swiper-button-next">
+        east
+      </span>
+      <!-- Slider navigation buttons End -->
+    </div>
+  </section>
+  <!-- Hero section end -->
+
+  <!-- About section -->
+  <section class="about-TAG" id="about-section">
+    <div class="container-wrapper">
+      <h5 class="about-TAG__meta">About Us</h5>
+      <h2 class="about-TAG__title">A data driven brand house that offers you ideation, strategy and innovation.</h2>
+      <p class="about-TAG__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </section>
+  <!-- About section end -->
+
+  <!-- What We Do section -->
+  <section class="what-we-do" id="wwd-section">
+    <div class="container-wrapper">
+      <div class="what-we-do__intro">
+        <h1 class="caps">what we 
+          <span class="what-we-do__TAG-red">do</span>
+        </h1>
+        <p>
+          Content, stories, positioning or design... Our promise is to make your brand B.A.M. Bold, Authentic and Meaningful.
+        </p>
+      </div>
+      <div class="services-TAG">
+        <div class="services-TAG__branding services-TAG__cards">
+          <img class="services-TAG__icon" src="./assets/icons/Icons/design-skills-svgrepo-com.svg" alt="Branding & design Icon" aria-hidden="true">
+          <h4 class="services-TAG__title">
+            Branding & Design
+          </h4>
+          <p class="services-TAG__info">
+            A new digital and print identity. Come ugly, leave pretty.
+          </p>
+        </div>
+        <div class="services-TAG__advertising  services-TAG__cards">
+          <img class="services-TAG__icon" src="./assets/icons/Icons/marketing-advertising-svgrepo-com.svg" alt="Branding & design Icon" aria-hidden="true">
+          <h4 class="services-TAG__title">
+            Advertising
+          </h4>
+          <p class="services-TAG__info">
+            Once everything is in place, creative ads are the way to go.
+          </p>
+        </div>
+        <div class="services-TAG__copywriting  services-TAG__cards">
+          <img class="services-TAG__icon" src="./assets/icons/Icons/writing-note-svgrepo-com.svg" alt="Branding & design Icon" aria-hidden="true">
+          <h4 class="services-TAG__title">
+            Copyriting & Storytelling
+          </h4>
+          <p class="services-TAG__info">
+            The world is limited. Words are not. We turn facts into stories.
+          </p>
+        </div>
+        <div class="services-TAG__social-media  services-TAG__cards">
+          <img class="services-TAG__icon" src="./assets/icons/Icons/noun_Social Media Marketing_3783503.svg" alt="Branding & design Icon" aria-hidden="true">
+          <h4 class="services-TAG__title">
+            Social Media
+          </h4>
+          <p class="services-TAG__info">
+            We get it done right. Right strategy, right media, right content.
+          </p>
+        </div>
+        <div class="services-TAG__strategy  services-TAG__cards">
+          <img class="services-TAG__icon" src="./assets/icons/Icons/brain-svgrepo-com.svg" alt="Branding & design Icon" aria-hidden="true">
+          <h4 class="services-TAG__title">
+            Positioning & Strategy
+          </h4>
+          <p class="services-TAG__info">
+            We won’t let you leave without a clear plan and positioning.
+          </p>
+        </div>
+        <div class="services-TAG__campaigns  services-TAG__cards">
+          <img class="services-TAG__icon" src="./assets/icons/Icons/bullseye-svgrepo-com (2).svg" alt="Branding & design Icon" aria-hidden="true">
+          <h4 class="services-TAG__title">
+            DSP Marketing Campaigns
+          </h4>
+          <p class="services-TAG__info">
+            Now that you have a story to tell, let’s spread the word!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- What We Do section End -->
+
+  <!-- Our Cases section -->
+  <section class="case-slider" id="case-section">
+    <div class="case-slider__main-wrapper">
+      <div class="case-slider__title">
+        <h1 class="caps">our cases</h1>
+        <p>Some selected work</p>
+      </div>
+      <div class="case-slider__slider-container">
+        <div class="case-slider__slider">
+        
+          <div class="swiperCases">
+            <div class="swiper-wrapper">
+              <!-- Case 1 -->
+              <div class="case-slider__slides swiper-slide">
+                <a class="case-slider__single" href="./case-studies/kenya-railways.html">
+                  <div class="case-slider__content">
+                    <div class="case-one case-slider__image"></div>
+                    <p>Kenya Railways</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Case 1 End -->
+              <!-- Case 2 -->
+              <div class="case-slider__slides swiper-slide">
+                <a class="case-slider__single" href="#">
+                  <div class="case-slider__content">
+                    <div class="case-two case-slider__image"></div>
+                    <p>Dignity Furniture</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Case 2 End -->
+              <!-- Case 3 -->
+              <div class="case-slider__slides swiper-slide">
+                <a class="case-slider__single" href="#">
+                  <div class="case-slider__content">
+                    <div class="case-three case-slider__image"></div>
+                    <p>Buy Rent Kenya</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Case 3 End -->
+              <!-- Case 4 -->
+              <div class="case-slider__slides swiper-slide">
+                <a class="case-slider__single" href="#">
+                  <div class="case-slider__content">
+                    <div class="case-four case-slider__image"></div>
+                    <p>Betika</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Case 4 End -->
+              <!-- Case 5 -->
+              <div class="case-slider__slides swiper-slide">
+                <a class="case-slider__single" href="#">
+                  <div class="case-slider__content">
+                    <div class="case-five case-slider__image"></div>
+                    <p>UoN</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Case 5 End -->
+              <!-- Case 6 -->
+              <div class="case-slider__slides swiper-slide">
+                <a class="case-slider__single" href="#">
+                  <div class="case-slider__content">
+                    <div class="case-six case-slider__image"></div>
+                    <p>ePaper - 2020 campaign</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Case 6 End -->
+            </div>
+        
+          </div>
+          
+          <!-- Slider navigation buttons -->
+          <span id="swiper-button-prev1" class="material-icons-outlined">
+            west
+          </span>
+          <span id="swiper-button-next1" class="material-icons-outlined">
+            east
+          </span>
+          <!-- Slider navigation buttons End -->
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our Cases section End -->
+
+  <!-- Recent Clients section -->
+  <section class="clients-slider">
+    <div class="container-wrapper">
+      <div class="clients-slider__title-wrapper">
+        <h1 class="caps">Our recent clients</h1>
+        <p>We love to juggle with a wide variety 
+          of brands. Diversity is what we do best. 
+          That’s why our vision is unique.</p>
+      </div>
+
+      <div class="clients-slider__slider-wrapper">
+        
+        <!-- Slider main container -->
+        <div class="swiperClients">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Client One -->
+            <div class="swiper-slide">
+              <div class="clientImg cs-one cs-slide"></div>
+              <p class="clientName">Kenya Railways</p>
+            </div>
+            <!-- Client One End-->
+
+            <!-- Client Two -->
+            <div class="swiper-slide">
+              <div class="clientImg cs-two cs-slide"></div>
+              <p class="clientName">Scribe Services</p>
+            </div>
+            <!-- Client Two End-->
+
+            <!-- Client Three -->
+            <div class="swiper-slide">
+              <div class="clientImg cs-three cs-slide"></div>
+              <p class="clientName">Buy Rent</p>
+            </div>
+            <!-- Client Three End-->
+
+            <!-- Client Four -->
+            <div class="swiper-slide">
+              <div class="clientImg cs-four cs-slide"></div>
+              <p class="clientName">USIU</p>
+            </div>
+            <!-- Client Four End-->
+
+            <!-- Client Five -->
+            <div class="swiper-slide">
+              <div class="clientImg cs-five cs-slide"></div>
+              <p class="clientName">Betika</p>
+            </div>
+            <!-- Client Five End-->
+
+            <!-- Client Six -->
+            <div class="swiper-slide">
+              <div class="clientImg cs-six cs-slide"></div>
+              <p class="clientName">UoN</p>
+            </div>
+            <!-- Client Six End-->
+
+            <!-- Client Seven -->
+            <div class="swiper-slide">
+              <div class="clientImg cs-seven cs-slide"></div>
+              <p class="clientName">Nation ePaper</p>
+            </div>
+            <!-- Client Seven End-->
+
+            <!-- Client Eight -->
+            <div class="swiper-slide">
+              <div class="clientImg cs-eight cs-slide"></div>
+              <p class="clientName">Dignity Furniture</p>
+            </div>
+            <!-- Client Eight End-->
+
+            <!-- Client Nine -->
+            <div class="swiper-slide">
+              <div class="clientImg cs-nine cs-slide"></div>
+              <p class="clientName">KRC</p>
+            </div>
+            <!-- Client Nine End-->
+
+            <!-- Client Ten -->
+            <div class="swiper-slide">
+              <div class="clientImg cs-ten cs-slide"></div>
+              <p class="clientName">ST Andrews Turi</p>
+            </div>
+            <!-- Client Ten End-->
+
+          </div>
+          
+        </div>
+        <!-- Slider navigation buttons -->
+        <span id="swiper-button-prev" class="material-icons-outlined">
+          west
+        </span>
+        <span id="swiper-button-next" class="material-icons-outlined">
+          east
+        </span>
+        <!-- Slider navigation buttons End -->
+
+      </div>
+    </div>
+  </section>
+  <!-- Recent Clients section End -->
+
+  <!-- News section -->
+  <section class="news-slider" id="news-section">
+    <div class="container-wrapper news-slider__wrapper">
+      <h1>News</h1>
+      <p>
+        Our blog champions creative endeavor. It is the voice of an entire continent that beckons you closer to listen, to look, to watch. We create and we curate. We spread messages, we break down barriers, and we connect people. Follow our story and you’ll see what an entire continent of creativity has to offer.
+      </p>
+
+      <div class="news-slider__news-items">
+        <!-- News item 1 -->
+        <div class="news-slider__instance1 instance-all">
+          <div class="news-slider__image">
+            <img src="./assets/img/blog1.jpg" alt="Content Agency">
+          </div>
+
+          <h4>
+            What Is a Content Agency?
+          </h4>
+          <p>
+            At first thought, you might think that the term "Content Agency" is simply a synonym for "Advertising Agency."
+          </p>
+
+          <p>
+            <a href="./news-read.html" class="news-slider__news-link">READ MORE</a>
+          </p>
+        </div>
+        <!-- News item 1 End -->
+
+        <!-- News item 2 -->
+        <div class="news-slider__instance2 instance-all">
+          <div class="news-slider__image">
+            <img src="./assets/img/blog2.jpg" alt="Content Agency">
+          </div>
+
+          <h4>
+            What Is a Content Agency?
+          </h4>
+          <p>
+            At first thought, you might think that the term "Content Agency" is simply a synonym for "Advertising Agency."
+          </p>
+
+          <p>
+            <a href="./news-read.html" class="news-slider__news-link">READ MORE</a>
+          </p>
+        </div>
+        <!-- News item 2 End -->
+
+        <!-- News item 3 -->
+        <div class="news-slider__instance3 instance-all">
+          <div class="news-slider__image">
+            <img src="./assets/img/blog3.jpg" alt="Content Agency">
+          </div>
+
+          <h4>
+            What Is a Content Agency?
+          </h4>
+          <p>
+            At first thought, you might think that the term "Content Agency" is simply a synonym for "Advertising Agency."
+          </p>
+
+          <p>
+            <a href="./news-read.html" class="news-slider__news-link">READ MORE</a>
+          </p>
+        </div>
+        <!-- News item 3 End -->
+        
+      </div>
+
+      <div class="articlesCTA">
+        <div class="cta">
+          <a href="./news.html">More Articles</a>
+        </div>
+      </div>
+    </div>
+   
+  </section>
+  <!-- News section End -->
+
+  <!-- Newsletter section -->
+  <section class="newsletter" id="newsletter-section">
+    <h5>
+      <span>Sign Up</span> for exclusive news and trends
+    </h5>
+    
+    <div class="newsletter__input-container" id="input_container">
+        <input type="text" id="input" class="newsletter__input" value placeholder="Email">
+        <span class="material-icons newsletter__img" id="input_img">
+          email
+        </span>
+        <button class="newsletter__btn" type="submit">Sign Up</button>
+        
+    </div>
+  </section>
+  <!-- Newsletter section End -->
+
+  <!-- Contact Us section -->
+  <footer class="contacts" id="contacts-section">
+    <div class="container-wrapper contacts__footer">
+      <div class="contacts__col-form">
+        <h3>
+          Get in touch with us
+        </h3>
+        <form action="/contact_us.php" method="post" class="contacts__form">
+          <label for="first-name"></label>
+          <input id="first-name" type="text" placeholder="First Name">
+
+          <label for="last-name"></label>
+          <input id="last-name" type="text" placeholder="Last Name">
+
+          <label for="phone_number"></label>
+          <input id="phone_number" type="number" placeholder="Phone Number">
+
+          <label for="email"></label>
+          <input id="email" type="email" placeholder="Email Address">
+
+          <button type="submit" class="contacts__submit">Submit</button>
+        </form>
+      </div>
+      <div class="contacts__col-info">
+        <h3>
+          Call or Email us on:
+        </h3>
+
+        <div class="contacts__phone">
+          <span class="material-icons">
+            call
+          </span>
+          <p>0719 038 012</p>
+        </div>
+
+        <div class="contacts__email">
+          <span class="material-icons">
+            email
+          </span>
+          <p><em>snkamau@ke.nationmedia.com</em></p>
+        </div>
+
+        <p>Better still...</p>
+
+        <p>Walk into Nation Center First Floor TAG Studio Offices</p>
+        <p>Let's start the Digital Transformation journey...</p>
+      </div>
+    </div>
+    <div class="contacts__footer-tag">
+      <p>© TAG COPYRIGHT 2021.</p>
+    </div>
+
+    <a href="#to-top">
+      <div class="contacts__back-to-top">
+        <span class="material-icons">
+          expand_less
+        </span>
+      </div>
+    </a>
+  </footer>
+  <!-- Contact Us section End -->
+
+
+  
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>
+</html>

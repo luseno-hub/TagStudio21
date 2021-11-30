@@ -1,0 +1,347 @@
+#news-page {
+  padding-top: 6.25rem;
+
+  @media screen and (min-width: 1200px) {
+    padding: 10rem 0;
+  }
+}
+
+.news-slider {
+  background-color: color(tag-purp);
+  color: color(white-clr);
+  padding: 3.125rem 0;
+
+  @media screen and (min-width: 998px) {
+    padding: 6.25rem 0;
+  }
+
+  &__wrapper {
+    h1 {
+      margin-bottom: 1.25rem;
+    }
+
+    p {
+      max-width: 90%;
+    }
+
+    .articlesCTA {
+      width: 100%;
+      height: 3em;
+      text-align: center;
+      margin-top: 3.125rem;
+
+      .cta {
+        width: 12em;
+        height: 4em;
+        margin: 0 auto;
+        display: grid;
+        place-items: center;
+        position: relative;
+      }
+
+      .cta::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        left: 0;
+        height: 3.5em;
+        background-color: color(white-clr);
+        border-radius: 5px;
+        transform-origin: left;
+        transition: all 300ms ease-in-out;
+      }
+
+      .cta:hover::before {
+        width: 100%;
+        z-index: 1;
+      }
+
+      .cta > a {
+        color: color(white-clr);
+        text-decoration: none;
+        font-family: fonts(h1);
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 1px solid color(white-clr);
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        padding: 1.25rem;
+        transition: color 300ms ease-in-out;
+      }
+
+      .cta > a:hover {
+        color: color(tag-purp);
+        z-index: 2;
+      }
+
+      @media screen and (min-width: 1400px) {
+        margin-top: 8rem;
+      }
+
+      &__more-items {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          text-decoration: none;
+          color: color(white-clr);
+          font-family: "Avenir LT Pro Bl";
+          margin-right: 0.3125rem;
+        }
+
+        a:hover ~ span {
+          transform: translateX(0.625rem);
+        }
+
+        span {
+          transition: all 300ms ease-in-out;
+        }
+      }
+    }
+  }
+
+  &__news-items {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 998px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 6.25rem;
+    }
+  }
+
+  &__instance1,
+  &__instance2,
+  &__instance3 {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 3.125rem;
+
+    h4 {
+      margin-bottom: 0.625rem;
+      font-size: mobileSize(H4);
+
+      @media screen and (min-width: 1400px) {
+        font-size: 1.3rem;
+      }
+    }
+
+    p {
+      max-width: 95%;
+      margin-bottom: 1.2rem;
+      font-weight: 300;
+      max-width: 35em;
+
+      @media screen and (min-width: 1400px) {
+        font-size: 1rem;
+      }
+    }
+
+    @media screen and (min-width: 998px) {
+      width: 30%;
+      min-width: 30%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 100%;
+    height: 14.0625em;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 0.1875rem;
+    -webkit-box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.4);
+
+    img {
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      transform-origin: center;
+      transition: transform 300ms ease-in-out;
+    }
+  }
+
+  &__image:hover > img {
+    transform: scale(1.05);
+  }
+
+  &__news-link {
+    color: color(white-clr);
+    text-decoration: none;
+    letter-spacing: 0.0625rem;
+    position: relative;
+    font-weight: 700;
+  }
+
+  &__news-link::before {
+    content: "";
+    width: 100%;
+    transform: scale(0, 1);
+    height: 0.1875em;
+    position: absolute;
+    bottom: -0.3125em;
+    background-color: color(white-clr);
+    transition: transform 300ms ease-in-out;
+  }
+
+  &__news-link:hover::before {
+    transform: scale(1, 1);
+  }
+}
+
+.instance-all {
+  @media screen and (min-width: 998px) {
+    margin: 0.625rem 0.625rem 2.5rem 0.625rem;
+  }
+}
+
+// News Read Styling
+.article-content {
+  color: color(white-clr);
+  background-color: color(tag-purp);
+
+  &__heading-bar {
+    padding: 6.125rem 0 0 0;
+    width: 100%;
+
+    h1 {
+      margin-bottom: 1.25rem;
+
+      @media screen and (min-width: 998px) {
+        margin-right: 3.125rem;
+        width: 60%;
+      }
+    }
+
+    @media screen and (min-width: 998px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 8rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__content-image {
+    width: 100%;
+    height: 18em;
+    margin: 1.25rem 0;
+    background-image: url("./assets/img/DN-COAST-SUMMIT-2602D.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__title-bar {
+    margin-bottom: 1.25rem;
+
+    h2 {
+      margin-bottom: 0.625rem;
+    }
+  }
+
+  &__body-content {
+    margin: 1.5625rem 0;
+
+    strong {
+      margin: 1.25rem 0;
+      display: inline-block;
+    }
+  }
+
+  &__all-stories {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 3.125rem 0;
+
+    p {
+      margin-right: 0.625rem;
+      font-weight: bold;
+    }
+
+    span {
+      transition: all 300ms ease-in-out;
+    }
+
+    &:hover > span {
+      transform: translateX(0.625rem);
+    }
+  }
+
+  &__cases-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    .next {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: end;
+
+      .img {
+        margin-left: 0.625rem;
+      }
+
+      .text {
+        p:nth-child(1) {
+          font-size: 0.625rem;
+        }
+
+        p:nth-child(2) {
+          font-size: 0.7rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .prev {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: start;
+
+      .img {
+        margin-right: 0.625rem;
+      }
+
+      .text {
+        p:nth-child(1) {
+          font-size: 0.625rem;
+        }
+
+        p:nth-child(2) {
+          font-size: 0.7rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  p {
+    @media screen and (min-width: 1400px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+// News Read Styling End

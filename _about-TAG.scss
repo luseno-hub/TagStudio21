@@ -1,0 +1,23 @@
+.about-TAG {
+  padding: 3.125rem 0;
+  background-color: color(tag-mustard);
+
+  &__meta {
+    margin-bottom: 1.25rem;
+    display: block;
+  }
+
+  &__title {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  .about-TAG {
+    padding: 6.25rem 0;
+
+    &__body {
+      width: 85%;
+    }
+  }
+}

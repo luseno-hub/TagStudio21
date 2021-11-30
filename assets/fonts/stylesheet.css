@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Proxima Nova Bl';
+    src: url('ProximaNova-Black.woff2') format('woff2'),
+        url('ProximaNova-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT Pro Lt Ob';
+    src: url('AvenirLTPro-LightOblique.woff2') format('woff2'),
+        url('AvenirLTPro-LightOblique.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir LT Pro Bl';
+    src: url('AvenirLTPro-Black.woff2') format('woff2'),
+        url('AvenirLTPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bl It';
+    src: url('ProximaNova-BlackIt.woff2') format('woff2'),
+        url('ProximaNova-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir LT Pro Lt';
+    src: url('AvenirLTPro-Light.woff2') format('woff2'),
+        url('AvenirLTPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT Pro Ob';
+    src: url('AvenirLTPro-Oblique.woff2') format('woff2'),
+        url('AvenirLTPro-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
